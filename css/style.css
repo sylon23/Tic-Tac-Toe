@@ -1,0 +1,22 @@
+ table{
+     margin: auto;
+     padding: 30px;
+ }
+ 
+ .grid{
+    width : 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 60;
+    font-weight: bold;
+}
+
+h2{
+    text-align: center;
+}
+
+#message{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
