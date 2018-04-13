@@ -4,7 +4,10 @@ document.onload = gameStart();
 
 
 function gameStart(){
-    document.player = "X"; // storing x as a permanent variable
+    document.player = "X"; // storing plaayer x as a permanent variable
+    if (Math.random() < 0.5){ //Choose player X or O to start the game randomly.
+       document.player = "O"; 
+    }
     document.winner = null //checks for a winner
     notification("Player " + document.player + ", your turn");// calls the notification function below and display messages
 }
@@ -75,6 +78,12 @@ function getGrid(number){
     return document.getElementById("s" + number).textContent ;// each grid has an id of (s1 - s9)
 }
 
+// //Refreshes the game
+// function clearGrid(number){
+//     document.getElementsByClassName("container").textContent = "";
+// }
 
+document.getElementById("refresh").addEventListener("click", function(){
+     document.getElementsByClassName("container").innerHTML = "";
 
-
+})
